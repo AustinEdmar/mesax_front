@@ -1,0 +1,8 @@
+// app global css in SCSS form
+
+.platform-ios {
+  .q-header {
+    padding-top: constant(safe-area-inset-top);
+    padding-top: env(safe-area-inset-top);
+  }
+}
