@@ -135,6 +135,7 @@ const qsair = computed(() => ({
   marginTop: Platform.is.ios ? '8rem' : '7rem',
   height: '100%',
   paddingTop: Platform.is.ios ? '70px' : '10px',
+
 }));
 //:class="$q.dark.isActive ? 'bg-grey-9' : 'bg-grey-3'"
 </script>
