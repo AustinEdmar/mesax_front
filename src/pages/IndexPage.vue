@@ -3,6 +3,7 @@
     <HeaderPage />
 
     <q-layout class="scrollable-div">
+      
       <div class="q-mt-xl">
         <div class="row q-mt-lg q-m-auto table-mb">
           <div class="col-12 col-md mesacursor" @click="goToRoute">

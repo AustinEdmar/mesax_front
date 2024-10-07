@@ -63,7 +63,9 @@
             <div class="row">
               <div class="col flex justify-center">
                 <div>
+                  
                   <q-btn
+                  v-if="authStore.isAuthenticated"
                     size="20px"
                     align="between"
                     flat
@@ -71,6 +73,7 @@
                     color="white"
                     label="SAIR"
                     icon="logout"
+                    @click="logout"
                   />
                 </div>
               </div>
@@ -92,6 +95,14 @@ defineOptions({
 import { ref } from 'vue';
 //import imageSrc from '/logo.png';
 //const imageSrc = ref('../../assets/logo.png');
+
+import { useAuthStore } from 'stores/authStore';
+import { useRouter } from 'vue-router';
+
+const authStore = useAuthStore();
+const router = useRouter();
+
+
 
 const menuList = [
   {
@@ -137,6 +148,11 @@ const qsair = computed(() => ({
   paddingTop: Platform.is.ios ? '70px' : '10px',
 
 }));
+
+const logout = async () => {
+  await authStore.logout();
+  router.push('/login');
+};
 //:class="$q.dark.isActive ? 'bg-grey-9' : 'bg-grey-3'"
 </script>
 
