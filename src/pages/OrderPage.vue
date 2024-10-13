@@ -115,7 +115,7 @@
                     <q-badge>3</q-badge>
                     <q-btn flat dense icon="add" class="text-grey-8" />
                   </div>
-                  <div class="text-body2 text-grey-8 text-bold">
+                  <div class="text-body2  text-grey-8 text-bold">
                     Preço Total: <span class="text-orange-10">19.500 kz</span>
                   </div>
                 </div>
@@ -288,7 +288,7 @@
                     >
                       <!-- Imagem do prato -->
                       <q-img
-                        src="../assets/prod-ham.png"
+                        src="../assets/coxinhas.avif"
                         class="card-img-top"
                       />
 
@@ -300,13 +300,13 @@
                         </div>
 
                         <!-- Disponibilidade -->
-                        <div class="text-grey text-caption q-mt-xs">
-                          Disponível 15 pratos
+                        <div class="text-grey  text-caption rounded q-mt-xs">
+                          Disponível <span class="dispo-pratos text-bold text-green">+15 pratos</span>
                         </div>
 
                         <!-- Preço -->
                         <div
-                          class="text-bold label-product text-orange-10 text-h5 q-mt-md"
+                          class="text-bold preco-border text-center label-product  text-h5 q-mt-md"
                         >
                           8.500 AKZ
                         </div>
@@ -332,13 +332,13 @@
                         </div>
 
                         <!-- Disponibilidade -->
-                        <div class="text-grey text-caption q-mt-xs">
-                          Disponível 15 pratos
+                        <div class="text-grey  text-caption rounded q-mt-xs">
+                          Disponível <span class="dispo-pratos text-bold text-green">+15 pratos</span>
                         </div>
 
                         <!-- Preço -->
                         <div
-                          class="text-bold label-product text-orange-10 text-h5 q-mt-md"
+                          class="text-bold preco-border text-center label-product  text-h5 q-mt-md"
                         >
                           8.500 AKZ
                         </div>
@@ -352,7 +352,7 @@
                     >
                       <!-- Imagem do prato -->
                       <q-img
-                        src="../assets/coxinhas.avif"
+                        src="../assets/food1.avif"
                         class="card-img-top"
                       />
 
@@ -364,13 +364,13 @@
                         </div>
 
                         <!-- Disponibilidade -->
-                        <div class="text-grey text-caption q-mt-xs">
-                          Disponível 15 pratos
+                        <div class="text-grey  text-caption rounded q-mt-xs">
+                          Disponível <span class="dispo-pratos text-bold text-green">+15 pratos</span>
                         </div>
 
                         <!-- Preço -->
                         <div
-                          class="text-bold label-product text-orange-10 text-h5 q-mt-md"
+                          class="text-bold preco-border text-center label-product  text-h5 q-mt-md"
                         >
                           8.500 AKZ
                         </div>
@@ -383,7 +383,10 @@
                       flat
                     >
                       <!-- Imagem do prato -->
-                      <q-img src="../assets/food1.avif" class="card-img-top" />
+                      <q-img
+                        src="../assets/frango.avif"
+                        class="card-img-top"
+                      />
 
                       <!-- Conteúdo do card -->
                       <div class="q-pa-md">
@@ -393,13 +396,13 @@
                         </div>
 
                         <!-- Disponibilidade -->
-                        <div class="text-grey text-caption q-mt-xs">
-                          Disponível 15 pratos
+                        <div class="text-grey  text-caption rounded q-mt-xs">
+                          Disponível <span class="dispo-pratos text-bold text-green">+15 pratos</span>
                         </div>
 
                         <!-- Preço -->
                         <div
-                          class="text-bold label-product text-orange-10 text-h5 q-mt-md"
+                          class="text-bold preco-border text-center label-product  text-h5 q-mt-md"
                         >
                           8.500 AKZ
                         </div>
@@ -412,7 +415,10 @@
                       flat
                     >
                       <!-- Imagem do prato -->
-                      <q-img src="../assets/food1.avif" class="card-img-top" />
+                      <q-img
+                        src="../assets/food2.avif"
+                        class="card-img-top"
+                      />
 
                       <!-- Conteúdo do card -->
                       <div class="q-pa-md">
@@ -422,13 +428,13 @@
                         </div>
 
                         <!-- Disponibilidade -->
-                        <div class="text-grey text-caption q-mt-xs">
-                          Disponível 15 pratos
+                        <div class="text-grey  text-caption rounded q-mt-xs">
+                          Disponível <span class="dispo-pratos text-bold text-green">+15 pratos</span>
                         </div>
 
                         <!-- Preço -->
                         <div
-                          class="text-bold label-product text-orange-10 text-h5 q-mt-md"
+                          class="text-bold preco-border text-center label-product  text-h5 q-mt-md"
                         >
                           8.500 AKZ
                         </div>
@@ -441,7 +447,10 @@
                       flat
                     >
                       <!-- Imagem do prato -->
-                      <q-img src="../assets/food2.avif" class="card-img-top" />
+                      <q-img
+                        src="../assets/food3.avif"
+                        class="card-img-top"
+                      />
 
                       <!-- Conteúdo do card -->
                       <div class="q-pa-md">
@@ -451,13 +460,13 @@
                         </div>
 
                         <!-- Disponibilidade -->
-                        <div class="text-grey text-caption q-mt-xs">
-                          Disponível 15 pratos
+                        <div class="text-grey  text-caption rounded q-mt-xs">
+                          Disponível <span class="dispo-pratos text-bold text-green">+15 pratos</span>
                         </div>
 
                         <!-- Preço -->
                         <div
-                          class="text-bold label-product text-orange-10 text-h5 q-mt-md"
+                          class="text-bold preco-border text-center label-product  text-h5 q-mt-md"
                         >
                           8.500 AKZ
                         </div>
@@ -470,7 +479,10 @@
                       flat
                     >
                       <!-- Imagem do prato -->
-                      <q-img src="../assets/food2.avif" class="card-img-top" />
+                      <q-img
+                        src="../assets/food5.avif"
+                        class="card-img-top"
+                      />
 
                       <!-- Conteúdo do card -->
                       <div class="q-pa-md">
@@ -480,13 +492,13 @@
                         </div>
 
                         <!-- Disponibilidade -->
-                        <div class="text-grey text-caption q-mt-xs">
-                          Disponível 15 pratos
+                        <div class="text-grey  text-caption rounded q-mt-xs">
+                          Disponível <span class="dispo-pratos text-bold text-green">+15 pratos</span>
                         </div>
 
                         <!-- Preço -->
                         <div
-                          class="text-bold label-product text-orange-10 text-h5 q-mt-md"
+                          class="text-bold preco-border text-center label-product  text-h5 q-mt-md"
                         >
                           8.500 AKZ
                         </div>
@@ -499,7 +511,10 @@
                       flat
                     >
                       <!-- Imagem do prato -->
-                      <q-img src="../assets/food4.avif" class="card-img-top" />
+                      <q-img
+                        src="../assets/food7.avif"
+                        class="card-img-top"
+                      />
 
                       <!-- Conteúdo do card -->
                       <div class="q-pa-md">
@@ -509,13 +524,13 @@
                         </div>
 
                         <!-- Disponibilidade -->
-                        <div class="text-grey text-caption q-mt-xs">
-                          Disponível 15 pratos
+                        <div class="text-grey  text-caption rounded q-mt-xs">
+                          Disponível <span class="dispo-pratos text-bold text-green">+15 pratos</span>
                         </div>
 
                         <!-- Preço -->
                         <div
-                          class="text-bold label-product text-orange-10 text-h5 q-mt-md"
+                          class="text-bold preco-border text-center label-product  text-h5 q-mt-md"
                         >
                           8.500 AKZ
                         </div>
@@ -528,7 +543,10 @@
                       flat
                     >
                       <!-- Imagem do prato -->
-                      <q-img src="../assets/food5.avif" class="card-img-top" />
+                      <q-img
+                        src="../assets/frango.avif"
+                        class="card-img-top"
+                      />
 
                       <!-- Conteúdo do card -->
                       <div class="q-pa-md">
@@ -538,13 +556,13 @@
                         </div>
 
                         <!-- Disponibilidade -->
-                        <div class="text-grey text-caption q-mt-xs">
-                          Disponível 15 pratos
+                        <div class="text-grey  text-caption rounded q-mt-xs">
+                          Disponível <span class="dispo-pratos text-bold text-green">+15 pratos</span>
                         </div>
 
                         <!-- Preço -->
                         <div
-                          class="text-bold label-product text-orange-10 text-h5 q-mt-md"
+                          class="text-bold preco-border text-center label-product  text-h5 q-mt-md"
                         >
                           8.500 AKZ
                         </div>
@@ -557,7 +575,10 @@
                       flat
                     >
                       <!-- Imagem do prato -->
-                      <q-img src="../assets/food6.avif" class="card-img-top" />
+                      <q-img
+                        src="../assets/pizza.avif"
+                        class="card-img-top"
+                      />
 
                       <!-- Conteúdo do card -->
                       <div class="q-pa-md">
@@ -567,13 +588,13 @@
                         </div>
 
                         <!-- Disponibilidade -->
-                        <div class="text-grey text-caption q-mt-xs">
-                          Disponível 15 pratos
+                        <div class="text-grey  text-caption rounded q-mt-xs">
+                          Disponível <span class="dispo-pratos text-bold text-green">+15 pratos</span>
                         </div>
 
                         <!-- Preço -->
                         <div
-                          class="text-bold label-product text-orange-10 text-h5 q-mt-md"
+                          class="text-bold preco-border text-center label-product  text-h5 q-mt-md"
                         >
                           8.500 AKZ
                         </div>
@@ -586,7 +607,10 @@
                       flat
                     >
                       <!-- Imagem do prato -->
-                      <q-img src="../assets/food7.avif" class="card-img-top" />
+                      <q-img
+                        src="../assets/pizza1.avif"
+                        class="card-img-top"
+                      />
 
                       <!-- Conteúdo do card -->
                       <div class="q-pa-md">
@@ -596,71 +620,13 @@
                         </div>
 
                         <!-- Disponibilidade -->
-                        <div class="text-grey text-caption q-mt-xs">
-                          Disponível 15 pratos
+                        <div class="text-grey  text-caption rounded q-mt-xs">
+                          Disponível <span class="dispo-pratos text-bold text-green">+15 pratos</span>
                         </div>
 
                         <!-- Preço -->
                         <div
-                          class="text-bold label-product text-orange-10 text-h5 q-mt-md"
-                        >
-                          8.500 AKZ
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="q-pa-none q-mb-md card-customer"
-                      :style="customerheight"
-                      bordered
-                      flat
-                    >
-                      <!-- Imagem do prato -->
-                      <q-img src="../assets/frango.avif" class="card-img-top" />
-
-                      <!-- Conteúdo do card -->
-                      <div class="q-pa-md">
-                        <!-- Nome do prato -->
-                        <div class="text-bold label-product text-grey-8">
-                          Bife a Milaneza
-                        </div>
-
-                        <!-- Disponibilidade -->
-                        <div class="text-grey text-caption q-mt-xs">
-                          Disponível 15 pratos
-                        </div>
-
-                        <!-- Preço -->
-                        <div
-                          class="text-bold label-product text-orange-10 text-h5 q-mt-md"
-                        >
-                          8.500 AKZ
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="q-pa-none q-mb-md card-customer"
-                      :style="customerheight"
-                      bordered
-                      flat
-                    >
-                      <!-- Imagem do prato -->
-                      <q-img src="../assets/hambu.png" class="card-img-top" />
-
-                      <!-- Conteúdo do card -->
-                      <div class="q-pa-md">
-                        <!-- Nome do prato -->
-                        <div class="text-bold label-product text-grey-8">
-                          Bife a Milaneza
-                        </div>
-
-                        <!-- Disponibilidade -->
-                        <div class="text-grey text-caption q-mt-xs">
-                          Disponível 15 pratos
-                        </div>
-
-                        <!-- Preço -->
-                        <div
-                          class="text-bold label-product text-orange-10 text-h5 q-mt-md"
+                          class="text-bold preco-border text-center label-product  text-h5 q-mt-md"
                         >
                           8.500 AKZ
                         </div>
@@ -686,13 +652,13 @@
                         </div>
 
                         <!-- Disponibilidade -->
-                        <div class="text-grey text-caption q-mt-xs">
-                          Disponível 15 pratos
+                        <div class="text-grey  text-caption rounded q-mt-xs">
+                          Disponível <span class="dispo-pratos text-bold text-green">+15 pratos</span>
                         </div>
 
                         <!-- Preço -->
                         <div
-                          class="text-bold label-product text-orange-10 text-h5 q-mt-md"
+                          class="text-bold preco-border text-center label-product  text-h5 q-mt-md"
                         >
                           8.500 AKZ
                         </div>
@@ -718,13 +684,13 @@
                         </div>
 
                         <!-- Disponibilidade -->
-                        <div class="text-grey text-caption q-mt-xs">
-                          Disponível 15 pratos
+                        <div class="text-grey  text-caption rounded q-mt-xs">
+                          Disponível <span class="dispo-pratos text-bold text-green">+15 pratos</span>
                         </div>
 
                         <!-- Preço -->
                         <div
-                          class="text-bold label-product text-orange-10 text-h5 q-mt-md"
+                          class="text-bold preco-border text-center label-product  text-h5 q-mt-md"
                         >
                           8.500 AKZ
                         </div>
@@ -750,13 +716,13 @@
                         </div>
 
                         <!-- Disponibilidade -->
-                        <div class="text-grey text-caption q-mt-xs">
-                          Disponível 15 pratos
+                        <div class="text-grey  text-caption rounded q-mt-xs">
+                          Disponível <span class="dispo-pratos text-bold text-green">+15 pratos</span>
                         </div>
 
                         <!-- Preço -->
                         <div
-                          class="text-bold label-product text-orange-10 text-h5 q-mt-md"
+                          class="text-bold preco-border text-center label-product  text-h5 q-mt-md"
                         >
                           8.500 AKZ
                         </div>
@@ -782,13 +748,13 @@
                         </div>
 
                         <!-- Disponibilidade -->
-                        <div class="text-grey text-caption q-mt-xs">
-                          Disponível 15 pratos
+                        <div class="text-grey  text-caption rounded q-mt-xs">
+                          Disponível <span class="dispo-pratos text-bold text-green">+15 pratos</span>
                         </div>
 
                         <!-- Preço -->
                         <div
-                          class="text-bold label-product text-orange-10 text-h5 q-mt-md"
+                          class="text-bold preco-border text-center label-product  text-h5 q-mt-md"
                         >
                           8.500 AKZ
                         </div>
@@ -814,19 +780,148 @@
                         </div>
 
                         <!-- Disponibilidade -->
-                        <div class="text-grey text-caption q-mt-xs">
-                          Disponível 15 pratos
+                        <div class="text-grey  text-caption rounded q-mt-xs">
+                          Disponível <span class="dispo-pratos text-bold text-green">+15 pratos</span>
                         </div>
 
                         <!-- Preço -->
                         <div
-                          class="text-bold label-product text-orange-10 text-h5 q-mt-md"
+                          class="text-bold preco-border text-center label-product  text-h5 q-mt-md"
                         >
                           8.500 AKZ
                         </div>
                       </div>
                     </div>
-                  </div>
+                    <div
+                      class="q-pa-none q-mb-md card-customer"
+                      :style="customerheight"
+                      bordered
+                      flat
+                    >
+                      <!-- Imagem do prato -->
+                      <q-img
+                        src="../assets/prod-ham.png"
+                        class="card-img-top"
+                      />
+
+                      <!-- Conteúdo do card -->
+                      <div class="q-pa-md">
+                        <!-- Nome do prato -->
+                        <div class="text-bold label-product text-grey-8">
+                          Bife a Milaneza
+                        </div>
+
+                        <!-- Disponibilidade -->
+                        <div class="text-grey  text-caption rounded q-mt-xs">
+                          Disponível <span class="dispo-pratos text-bold text-green">+15 pratos</span>
+                        </div>
+
+                        <!-- Preço -->
+                        <div
+                          class="text-bold preco-border text-center label-product  text-h5 q-mt-md"
+                        >
+                          8.500 AKZ
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="q-pa-none q-mb-md card-customer"
+                      :style="customerheight"
+                      bordered
+                      flat
+                    >
+                      <!-- Imagem do prato -->
+                      <q-img
+                        src="../assets/prod-ham.png"
+                        class="card-img-top"
+                      />
+
+                      <!-- Conteúdo do card -->
+                      <div class="q-pa-md">
+                        <!-- Nome do prato -->
+                        <div class="text-bold label-product text-grey-8">
+                          Bife a Milaneza
+                        </div>
+
+                        <!-- Disponibilidade -->
+                        <div class="text-grey  text-caption rounded q-mt-xs">
+                          Disponível <span class="dispo-pratos text-bold text-green">+15 pratos</span>
+                        </div>
+
+                        <!-- Preço -->
+                        <div
+                          class="text-bold preco-border text-center label-product  text-h5 q-mt-md"
+                        >
+                          8.500 AKZ
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="q-pa-none q-mb-md card-customer"
+                      :style="customerheight"
+                      bordered
+                      flat
+                    >
+                      <!-- Imagem do prato -->
+                      <q-img
+                        src="../assets/prod-ham.png"
+                        class="card-img-top"
+                      />
+
+                      <!-- Conteúdo do card -->
+                      <div class="q-pa-md">
+                        <!-- Nome do prato -->
+                        <div class="text-bold label-product text-grey-8">
+                          Bife a Milaneza
+                        </div>
+
+                        <!-- Disponibilidade -->
+                        <div class="text-grey  text-caption rounded q-mt-xs">
+                          Disponível <span class="dispo-pratos text-bold text-green">+15 pratos</span>
+                        </div>
+
+                        <!-- Preço -->
+                        <div
+                          class="text-bold preco-border text-center label-product  text-h5 q-mt-md"
+                        >
+                          8.500 AKZ
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="q-pa-none q-mb-md card-customer"
+                      :style="customerheight"
+                      bordered
+                      flat
+                    >
+                      <!-- Imagem do prato -->
+                      <q-img
+                        src="../assets/prod-ham.png"
+                        class="card-img-top"
+                      />
+
+                      <!-- Conteúdo do card -->
+                      <div class="q-pa-md">
+                        <!-- Nome do prato -->
+                        <div class="text-bold label-product text-grey-8">
+                          Bife a Milaneza
+                        </div>
+
+                        <!-- Disponibilidade -->
+                        <div class="text-grey  text-caption rounded q-mt-xs">
+                          Disponível <span class="dispo-pratos text-bold text-green">+15 pratos</span>
+                        </div>
+
+                        <!-- Preço -->
+                        <div
+                          class="text-bold preco-border text-center label-product  text-h5 q-mt-md"
+                        >
+                          8.500 AKZ
+                        </div>
+                      </div>
+                    </div>
+                  
+                </div>
                 </div>
               </q-tab-panel>
 
@@ -958,6 +1053,23 @@ function toggleRightDrawer() {
 
 .label-product {
   font-size: large;
+  
+}
+
+.dispo-pratos{
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.preco-border {
+  border: 1px solid rgb(255, 115, 0);
+  border-radius: 20px;
+  width: 100%;
+  background-color: rgb(255, 115, 0);
+  color: white;
+  box-shadow: 3px 10px 30px -1px rgba(255,113,12,0.7);
+
 }
 
 .card-customer {
