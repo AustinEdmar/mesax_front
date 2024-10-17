@@ -3,7 +3,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "typeRoots": ["node_modules/@types", "types"],
-    "allowJs": true
+    "allowJs": true,
+    "skipLibCheck": true
   },
   "exclude": [
     "./dist",

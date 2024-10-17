@@ -1,15 +1,15 @@
 <template>
-  <div class="row q-pa-md q-ml-lg q-mt-md text-dark">
+  <div class="row q-pa-md q-ml-lg q-mt-lg text-dark">
     <div class="col-md-2">
-      <div class="row">
-        <div class="col-2 dispo-border flex flex-center">
+      <div class="row  q-px-md">
+        <div class="col-2 dispo-border  flex flex-center">
           <div class="dispo-border-back"></div>
         </div>
         <span class="col-2 text-white">Disponivel</span>
       </div>
     </div>
-    <div class="col-md-2 text-white">
-      <div class="row">
+    <div class="col-md-2 text-white ">
+      <div class="row q-px-md">
         <div class="col-2 reserva-border flex flex-center">
           <div class="reserva-border-back"></div>
         </div>
@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="col-md-2 text-white">
-      <div class="row">
+      <div class="row q-px-md">
         <div class="col-2 ocupada-border flex flex-center">
           <div class="ocupada-border-back"></div>
         </div>

@@ -51,7 +51,7 @@
           </q-item>
           <q-separator :key="'sep' + index" v-if="menuItem.separator" />
         </template>
-        <div class="column q-sair" :style="qsair">
+        <div class="column " :style="qsair">
           <div class="q-list-sair flex justify-center">
             <div class="q-list-sair-icon">
               <q-avatar>
@@ -59,13 +59,25 @@
               </q-avatar>
             </div>
           </div>
-          <div class="logout q-mt-xl">
+          <div class="logout q-mt-lg">
             <div class="row">
               <div class="col flex justify-center">
                 <div>
-                  
-                  <q-btn
+
+                  <!-- <q-btn
                   v-if="authStore.isAuthenticated"
+                    size="20px"
+                    align="between"
+                    flat
+                    rounded
+                    color="white"
+                    label="SAIR"
+                    icon="logout"
+                    @click="logout"
+                  /> -->
+
+                  <q-btn
+
                     size="20px"
                     align="between"
                     flat
@@ -96,10 +108,10 @@ import { ref } from 'vue';
 //import imageSrc from '/logo.png';
 //const imageSrc = ref('../../assets/logo.png');
 
-import { useAuthStore } from 'stores/authStore';
+//import { useAuthStore } from 'stores/authStore';
 import { useRouter } from 'vue-router';
 
-const authStore = useAuthStore();
+//const authStore = useAuthStore();
 const router = useRouter();
 
 
@@ -143,15 +155,15 @@ function toggleLeftDrawer() {
 }
 
 const qsair = computed(() => ({
-  marginTop: Platform.is.ios ? '8rem' : '7rem',
+  paddingTop: Platform.is.android ? '20px' : '7rem',
   height: '100%',
-  paddingTop: Platform.is.ios ? '70px' : '10px',
+
 
 }));
 
 const logout = async () => {
-  await authStore.logout();
-  router.push('/login');
+ // await authStore.logout();
+  router.push('/guest/login');
 };
 //:class="$q.dark.isActive ? 'bg-grey-9' : 'bg-grey-3'"
 </script>
@@ -174,8 +186,6 @@ const logout = async () => {
   height: 160px;
 }
 
-.q-list-sair {
-}
 
 .borda {
   border: 1px solid red;

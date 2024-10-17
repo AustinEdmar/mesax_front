@@ -1,9 +1,8 @@
 <template>
-  <div class="flex flex-center header-menu-layout">
-    <div class="q-pa-md text-dark menu-header">
-      <div class="row">
-        <div class="col-3">
-          <q-input
+  <div class=" header-menu-layout ">
+    <div class="q-pa-md text-dark menu-header  ">
+       <div class="row flex justify-space-between ">
+       <div class="col-4"><q-input
             label="Procurar por mesas.."
             class="input-bg"
             dense
@@ -15,62 +14,83 @@
               <q-icon name="search" class="input-bg-icon" />
             </template>
           </q-input>
-        </div>
-        <div class="col flex flex-center">
-          <q-item
-            v-for="item in menuItems"
-            :key="item.label"
-            :to="item.route"
-            :active="isActive(item.route)"
-            clickable
-            @click="handleClick(item.route)"
-          >
-            <q-item-section>
-              {{ item.label }}
-            </q-item-section>
-          </q-item>
-          <div class="row" :style="bells">
-            <!-- <div class="icon-container notifications">
-              <q-icon name="notifications" size="24px" />
-              <q-badge class="badge" color="red" floating label="5" />
-            </div> -->
+          </div>
+          <div class="col-6  menu-container">
+    <q-item
+      v-for="item in menuItems"
+      :key="item.label"
+      :to="item.route"
+      :active="isActive(item.route)"
+      clickable
+      @click="handleClick(item.route)"
+      class="menu-item"
+    >
+      <q-item-section>
+        {{ item.label }}
+      </q-item-section>
+    </q-item>
+  </div>
+       <div class="col-2 ">
+         <div class="row" :style="bells">
+
+
             <div class="">
               <q-btn
                 class="icon-container notifications"
                 flat
                 round
                 color="danger"
-                icon="notifications"
+                icon="ballot"
                 size="14px"
+                @click="open"
               >
                 <q-badge class="badge" color="red" floating label="5" />
               </q-btn>
             </div>
 
-            <div class="">
-              <q-btn
-                class="icon-container shopping_cart"
-                flat
-                round
-                color="danger"
-                icon="shopping_cart"
-                size="14px"
-              >
-                <q-badge class="badge" color="red" floating label="5" />
-              </q-btn>
-              <!-- <q-icon name="shopping_cart" size="24px" />-->
-            </div>
-          </div>
-        </div>
-      </div>
+           
+
+       </div>
+       </div>
+       </div>
+
+       <!--  -->
     </div>
   </div>
+  <vue-bottom-sheet
+  ref="myBottomSheet"
+  :max-width="1000"
+  :max-height="500"
+  overlay-color="#00001a"
+  >
+    <div class="bsheet q-ma-lg">
+      <h1>Lorem Ipsum</h1>
+    <h2>What is Lorem Ipsum?</h2>
+    <p>
+      <strong>Lorem Ipsum</strong> is simply dummy text
+    </p>
+
+    <h1>eu </h1>
+    <h2>What is Lorem Ipsum?</h2>
+    <p>
+      <strong>Lorem Ipsum</strong> is simply dummy text
+    </p>
+    <h1>Lorem Ipsum</h1>
+    <h2>What is Lorem Ipsum?</h2>
+    <p>
+      <strong>Lorem Ipsum</strong> is simply dummy text
+    </p>
+    </div>
+  </vue-bottom-sheet>
 </template>
 
 <script setup lang="ts">
 import { useRouter, useRoute } from 'vue-router';
 import { computed } from 'vue';
 import { Platform } from 'quasar';
+
+import VueBottomSheet from '@webzlodimir/vue-bottom-sheet';
+import  '@webzlodimir/vue-bottom-sheet/dist/style.css';
 
 import { ref } from 'vue';
 
@@ -112,13 +132,33 @@ const handleClick = (itemRoute: string): void => {
 };
 
 const bells = computed(() => ({
-  width: Platform.is.ios ? '30%' : '40%',
+ // width: Platform.is.ios ? '30%' : '10%',
 
-  paddingLeft: Platform.is.ios ? '80px' : '160px',
+  paddingLeft: Platform.is.android ? '50px' : '50px',
 }));
+
+const myBottomSheet = ref<InstanceType<typeof VueBottomSheet>>()
+
+const open = () => {
+  myBottomSheet.value.open();
+}
+
+
 </script>
 
 <style scoped>
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+  gap: 10px; /* Espaço entre os itens */
+}
+
+.menu-item {
+  flex: 1; /* Para distribuir os itens igualmente */
+  max-width: 100px; /* Define uma largura máxima para os itens */
+}
+
 .icon-container {
   position: relative;
   display: inline-block;
@@ -152,8 +192,7 @@ const bells = computed(() => ({
   margin-left: 30px;
 }
 
-.bells {
-}
+
 
 .menu-item {
   position: relative;
@@ -176,11 +215,14 @@ const bells = computed(() => ({
 
 .header-menu-layout {
   width: 90%;
-  height: 80px;
+  height: 70px;
 }
 
+.borda{
+  border:  1px solid red;
+}
 .menu-header {
-  width: 90%;
+  width: 100%;
   margin-top: 15px;
   border-radius: 20px;
   border: 1px solid gray;
@@ -193,6 +235,7 @@ const bells = computed(() => ({
 }
 
 .input-bg {
+  width: 220px;
   background: white;
   border-radius: 20px;
 }

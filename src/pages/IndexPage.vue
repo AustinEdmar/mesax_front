@@ -2,14 +2,15 @@
   <q-page class="">
     <HeaderPage />
 
-    <q-layout class="scrollable-div">
-      
-      <div class="q-mt-xl">
-        <div class="row q-mt-lg q-m-auto table-mb">
-          <div class="col-12 col-md mesacursor" @click="goToRoute">
-            <div class="container">
-              <div class="cont">
-                <div class="main-box q-ma-xl">
+    <q-layout class=" ">
+
+      <div class="scrollable-div ">
+        <div class="row  table-mb flex flex-center ">
+          
+          <q-btn flat class="  mesacursor " @click="goToRoute">
+            <div class="container ">
+              <div class="cont  ">
+                <div class="main-box  q-ma-xl">
                   <div class="circle">
                     <span class="text">A - 01</span>
                   </div>
@@ -20,11 +21,11 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md mesacursor" @click="goToRoute">
-            <div class="container">
-              <div class="cont">
-                <div class="main-box q-ma-xl">
+          </q-btn >
+          <q-btn flat class="  mesacursor " @click="goToRoute">
+            <div class="container ">
+              <div class="cont  ">
+                <div class="main-box  q-ma-xl">
                   <div class="circle">
                     <span class="text">A - 01</span>
                   </div>
@@ -35,11 +36,11 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md mesacursor" @click="goToRoute">
-            <div class="container">
-              <div class="cont">
-                <div class="main-box q-ma-xl">
+          </q-btn >
+          <q-btn flat class="  mesacursor " @click="goToRoute">
+            <div class="container ">
+              <div class="cont  ">
+                <div class="main-box  q-ma-xl">
                   <div class="circle">
                     <span class="text">A - 01</span>
                   </div>
@@ -50,11 +51,11 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md mesacursor" @click="goToRoute">
-            <div class="container">
-              <div class="cont">
-                <div class="main-box q-ma-xl">
+          </q-btn >
+          <q-btn flat class="  mesacursor " @click="goToRoute">
+            <div class="container ">
+              <div class="cont  ">
+                <div class="main-box  q-ma-xl">
                   <div class="circle">
                     <span class="text">A - 01</span>
                   </div>
@@ -65,11 +66,11 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md mesacursor" @click="goToRoute">
-            <div class="container">
-              <div class="cont">
-                <div class="main-box q-ma-xl">
+          </q-btn >
+          <q-btn flat class="  mesacursor " @click="goToRoute">
+            <div class="container ">
+              <div class="cont  ">
+                <div class="main-box  q-ma-xl">
                   <div class="circle">
                     <span class="text">A - 01</span>
                   </div>
@@ -80,247 +81,263 @@
                 </div>
               </div>
             </div>
-          </div>
+          </q-btn >
+          <q-btn flat class="  mesacursor " @click="goToRoute">
+            <div class="container ">
+              <div class="cont  ">
+                <div class="main-box  q-ma-xl">
+                  <div class="circle">
+                    <span class="text">A - 01</span>
+                  </div>
+                  <div class="square top"></div>
+                  <div class="square bottom"></div>
+                  <div class="square left"></div>
+                  <div class="square right"></div>
+                </div>
+              </div>
+            </div>
+          </q-btn >
+          <q-btn flat class="  mesacursor " @click="goToRoute">
+            <div class="container ">
+              <div class="cont  ">
+                <div class="main-box  q-ma-xl">
+                  <div class="circle">
+                    <span class="text">A - 01</span>
+                  </div>
+                  <div class="square top"></div>
+                  <div class="square bottom"></div>
+                  <div class="square left"></div>
+                  <div class="square right"></div>
+                </div>
+              </div>
+            </div>
+          </q-btn >
+          <q-btn flat class="  mesacursor " @click="goToRoute">
+            <div class="container ">
+              <div class="cont  ">
+                <div class="main-box  q-ma-xl">
+                  <div class="circle">
+                    <span class="text">A - 01</span>
+                  </div>
+                  <div class="square top"></div>
+                  <div class="square bottom"></div>
+                  <div class="square left"></div>
+                  <div class="square right"></div>
+                </div>
+              </div>
+            </div>
+          </q-btn >
+          <q-btn flat class="  mesacursor " @click="goToRoute">
+            <div class="container ">
+              <div class="cont  ">
+                <div class="main-box  q-ma-xl">
+                  <div class="circle">
+                    <span class="text">A - 01</span>
+                  </div>
+                  <div class="square top"></div>
+                  <div class="square bottom"></div>
+                  <div class="square left"></div>
+                  <div class="square right"></div>
+                </div>
+              </div>
+            </div>
+          </q-btn >
+          <q-btn flat class="  mesacursor " @click="goToRoute">
+            <div class="container ">
+              <div class="cont  ">
+                <div class="main-box  q-ma-xl">
+                  <div class="circle">
+                    <span class="text">A - 01</span>
+                  </div>
+                  <div class="square top"></div>
+                  <div class="square bottom"></div>
+                  <div class="square left"></div>
+                  <div class="square right"></div>
+                </div>
+              </div>
+            </div>
+          </q-btn >
+          <q-btn flat class="  mesacursor " @click="goToRoute">
+            <div class="container ">
+              <div class="cont  ">
+                <div class="main-box  q-ma-xl">
+                  <div class="circle">
+                    <span class="text">A - 01</span>
+                  </div>
+                  <div class="square top"></div>
+                  <div class="square bottom"></div>
+                  <div class="square left"></div>
+                  <div class="square right"></div>
+                </div>
+              </div>
+            </div>
+          </q-btn >
+          <q-btn flat class="  mesacursor " @click="goToRoute">
+            <div class="container ">
+              <div class="cont  ">
+                <div class="main-box  q-ma-xl">
+                  <div class="circle">
+                    <span class="text">A - 01</span>
+                  </div>
+                  <div class="square top"></div>
+                  <div class="square bottom"></div>
+                  <div class="square left"></div>
+                  <div class="square right"></div>
+                </div>
+              </div>
+            </div>
+          </q-btn >
+          <q-btn flat class="  mesacursor " @click="goToRoute">
+            <div class="container ">
+              <div class="cont  ">
+                <div class="main-box  q-ma-xl">
+                  <div class="circle">
+                    <span class="text">A - 01</span>
+                  </div>
+                  <div class="square top"></div>
+                  <div class="square bottom"></div>
+                  <div class="square left"></div>
+                  <div class="square right"></div>
+                </div>
+              </div>
+            </div>
+          </q-btn >
+          <q-btn flat class="  mesacursor " @click="goToRoute">
+            <div class="container ">
+              <div class="cont  ">
+                <div class="main-box  q-ma-xl">
+                  <div class="circle">
+                    <span class="text">A - 01</span>
+                  </div>
+                  <div class="square top"></div>
+                  <div class="square bottom"></div>
+                  <div class="square left"></div>
+                  <div class="square right"></div>
+                </div>
+              </div>
+            </div>
+          </q-btn >
+          <q-btn flat class="  mesacursor " @click="goToRoute">
+            <div class="container ">
+              <div class="cont  ">
+                <div class="main-box  q-ma-xl">
+                  <div class="circle">
+                    <span class="text">A - 01</span>
+                  </div>
+                  <div class="square top"></div>
+                  <div class="square bottom"></div>
+                  <div class="square left"></div>
+                  <div class="square right"></div>
+                </div>
+              </div>
+            </div>
+          </q-btn >
+          <q-btn flat class="  mesacursor " @click="goToRoute">
+            <div class="container ">
+              <div class="cont  ">
+                <div class="main-box  q-ma-xl">
+                  <div class="circle">
+                    <span class="text">A - 01</span>
+                  </div>
+                  <div class="square top"></div>
+                  <div class="square bottom"></div>
+                  <div class="square left"></div>
+                  <div class="square right"></div>
+                </div>
+              </div>
+            </div>
+          </q-btn >
+          <q-btn flat class="  mesacursor " @click="goToRoute">
+            <div class="container ">
+              <div class="cont  ">
+                <div class="main-box  q-ma-xl">
+                  <div class="circle">
+                    <span class="text">A - 01</span>
+                  </div>
+                  <div class="square top"></div>
+                  <div class="square bottom"></div>
+                  <div class="square left"></div>
+                  <div class="square right"></div>
+                </div>
+              </div>
+            </div>
+          </q-btn >
+          <q-btn flat class="  mesacursor " @click="goToRoute">
+            <div class="container ">
+              <div class="cont  ">
+                <div class="main-box  q-ma-xl">
+                  <div class="circle">
+                    <span class="text">A - 01</span>
+                  </div>
+                  <div class="square top"></div>
+                  <div class="square bottom"></div>
+                  <div class="square left"></div>
+                  <div class="square right"></div>
+                </div>
+              </div>
+            </div>
+          </q-btn >
+          <q-btn flat class="  mesacursor " @click="goToRoute">
+            <div class="container ">
+              <div class="cont  ">
+                <div class="main-box  q-ma-xl">
+                  <div class="circle">
+                    <span class="text">A - 01</span>
+                  </div>
+                  <div class="square top"></div>
+                  <div class="square bottom"></div>
+                  <div class="square left"></div>
+                  <div class="square right"></div>
+                </div>
+              </div>
+            </div>
+          </q-btn >
+          <q-btn flat class="  mesacursor " @click="goToRoute">
+            <div class="container ">
+              <div class="cont  ">
+                <div class="main-box  q-ma-xl">
+                  <div class="circle">
+                    <span class="text">A - 02</span>
+                  </div>
+                  <div class="square top"></div>
+                  <div class="square bottom"></div>
+                  <div class="square left"></div>
+                  <div class="square right"></div>
+                </div>
+              </div>
+            </div>
+          </q-btn >
+          <q-btn flat class="  mesacursor " @click="goToRoute">
+            <div class="container ">
+              <div class="cont  ">
+                <div class="main-box  q-ma-xl">
+                  <div class="circle">
+                    <span class="text">A - 01</span>
+                  </div>
+                  <div class="square top"></div>
+                  <div class="square bottom"></div>
+                  <div class="square left"></div>
+                  <div class="square right"></div>
+                </div>
+              </div>
+            </div>
+          </q-btn >
+
         </div>
-        <div class="row q-mt-lg q-m-auto table-mb">
-          <div class="col-12 col-md mesacursor" @click="goToRoute">
-            <div class="container">
-              <div class="cont">
-                <div class="main-box q-ma-xl">
-                  <div class="circle">
-                    <span class="text">A - 01</span>
-                  </div>
-                  <div class="square top"></div>
-                  <div class="square bottom"></div>
-                  <div class="square left"></div>
-                  <div class="square right"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md mesacursor" @click="goToRoute">
-            <div class="container">
-              <div class="cont">
-                <div class="main-box q-ma-xl">
-                  <div class="circle">
-                    <span class="text">A - 01</span>
-                  </div>
-                  <div class="square top"></div>
-                  <div class="square bottom"></div>
-                  <div class="square left"></div>
-                  <div class="square right"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md mesacursor" @click="goToRoute">
-            <div class="container">
-              <div class="cont">
-                <div class="main-box q-ma-xl">
-                  <div class="circle">
-                    <span class="text">A - 01</span>
-                  </div>
-                  <div class="square top"></div>
-                  <div class="square bottom"></div>
-                  <div class="square left"></div>
-                  <div class="square right"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md mesacursor" @click="goToRoute">
-            <div class="container">
-              <div class="cont">
-                <div class="main-box q-ma-xl">
-                  <div class="circle">
-                    <span class="text">A - 01</span>
-                  </div>
-                  <div class="square top"></div>
-                  <div class="square bottom"></div>
-                  <div class="square left"></div>
-                  <div class="square right"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md mesacursor" @click="goToRoute">
-            <div class="container">
-              <div class="cont">
-                <div class="main-box q-ma-xl">
-                  <div class="circle">
-                    <span class="text">A - 01</span>
-                  </div>
-                  <div class="square top"></div>
-                  <div class="square bottom"></div>
-                  <div class="square left"></div>
-                  <div class="square right"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row q-mt-lg q-m-auto table-mb">
-          <div class="col-12 col-md mesacursor" @click="goToRoute">
-            <div class="container">
-              <div class="cont">
-                <div class="main-box q-ma-xl">
-                  <div class="circle">
-                    <span class="text">A - 01</span>
-                  </div>
-                  <div class="square top"></div>
-                  <div class="square bottom"></div>
-                  <div class="square left"></div>
-                  <div class="square right"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md mesacursor" @click="goToRoute">
-            <div class="container">
-              <div class="cont">
-                <div class="main-box q-ma-xl">
-                  <div class="circle">
-                    <span class="text">A - 01</span>
-                  </div>
-                  <div class="square top"></div>
-                  <div class="square bottom"></div>
-                  <div class="square left"></div>
-                  <div class="square right"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md mesacursor" @click="goToRoute">
-            <div class="container">
-              <div class="cont">
-                <div class="main-box q-ma-xl">
-                  <div class="circle">
-                    <span class="text">A - 01</span>
-                  </div>
-                  <div class="square top"></div>
-                  <div class="square bottom"></div>
-                  <div class="square left"></div>
-                  <div class="square right"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md mesacursor" @click="goToRoute">
-            <div class="container">
-              <div class="cont">
-                <div class="main-box q-ma-xl">
-                  <div class="circle">
-                    <span class="text">A - 01</span>
-                  </div>
-                  <div class="square top"></div>
-                  <div class="square bottom"></div>
-                  <div class="square left"></div>
-                  <div class="square right"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md mesacursor" @click="goToRoute">
-            <div class="container">
-              <div class="cont">
-                <div class="main-box q-ma-xl">
-                  <div class="circle">
-                    <span class="text">A - 01</span>
-                  </div>
-                  <div class="square top"></div>
-                  <div class="square bottom"></div>
-                  <div class="square left"></div>
-                  <div class="square right"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row q-mt-lg q-m-auto table-mb">
-          <div class="col-12 col-md mesacursor" @click="goToRoute">
-            <div class="container">
-              <div class="cont">
-                <div class="main-box q-ma-xl">
-                  <div class="circle">
-                    <span class="text">A - 01</span>
-                  </div>
-                  <div class="square top"></div>
-                  <div class="square bottom"></div>
-                  <div class="square left"></div>
-                  <div class="square right"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md mesacursor" @click="goToRoute">
-            <div class="container">
-              <div class="cont">
-                <div class="main-box q-ma-xl">
-                  <div class="circle">
-                    <span class="text">A - 01</span>
-                  </div>
-                  <div class="square top"></div>
-                  <div class="square bottom"></div>
-                  <div class="square left"></div>
-                  <div class="square right"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md mesacursor" @click="goToRoute">
-            <div class="container">
-              <div class="cont">
-                <div class="main-box q-ma-xl">
-                  <div class="circle">
-                    <span class="text">A - 01</span>
-                  </div>
-                  <div class="square top"></div>
-                  <div class="square bottom"></div>
-                  <div class="square left"></div>
-                  <div class="square right"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md mesacursor" @click="goToRoute">
-            <div class="container">
-              <div class="cont">
-                <div class="main-box q-ma-xl">
-                  <div class="circle">
-                    <span class="text">A - 01</span>
-                  </div>
-                  <div class="square top"></div>
-                  <div class="square bottom"></div>
-                  <div class="square left"></div>
-                  <div class="square right"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md mesacursor" @click="goToRoute">
-            <div class="container">
-              <div class="cont">
-                <div class="main-box q-ma-xl">
-                  <div class="circle">
-                    <span class="text">A - 01</span>
-                  </div>
-                  <div class="square top"></div>
-                  <div class="square bottom"></div>
-                  <div class="square left"></div>
-                  <div class="square right"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </div>
     </q-layout>
+
+
   </q-page>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import HeaderPage from '../components/HeaderPage.vue';
+
 import { useRouter } from 'vue-router';
+
+
 
 defineOptions({
   name: 'IndexPage',
@@ -328,16 +345,21 @@ defineOptions({
 
 const router = useRouter();
 
+
 const goToRoute = () => {
   router.push('/order');
 };
 </script>
 
 <style scoped>
-.scrollable-div {
-  padding-bottom: 150px;
-  height: 80vh;
-  overflow: auto; /* Scroll só aparece se necessário */
+.scrollable-div  {
+ /*  padding-bottom: 150px; */
+  padding-bottom: 20px;
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
 }
 
 .borda {
@@ -346,11 +368,12 @@ const goToRoute = () => {
 
 .mesacursor {
   cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 15px;
 }
 
-.table-mb {
-  margin-bottom: 60px;
-}
+
 
 .div-table-mb {
   background-color: #f2f4f7;
@@ -365,7 +388,7 @@ const goToRoute = () => {
 .main-box {
   position: relative;
   background-color: #fff;
-  width: 120px;
+  width: 90px;
   height: 90px;
   display: flex;
   justify-content: center;

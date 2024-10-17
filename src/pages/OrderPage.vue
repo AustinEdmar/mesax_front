@@ -1,13 +1,14 @@
 <template>
   <q-page class="pa">
-    <q-header :style="headerStyle">
+    <q-header class="" :style="headerStyle">
       <div class="row q-mt-md">
-        <div class="col-md-1"><burguer /></div>
-        <div class="col-md-11">
-          <q-toolbar class="flex justify-space-between">
+        <div class="col-md-1"><burguer/></div>
+        <div class="col-md-11  " :style="headerStyleSearchToolbar">
+          <q-toolbar class=" flex flex-center ">
             <q-btn
               class="icon-container"
               flat
+              unelevated
               round
               color="white"
               icon="arrow_back"
@@ -18,6 +19,23 @@
                 >Pedido mesa: A-23</span
               >
             </q-btn>
+              <div class="search flex flex-center ">
+        <div class="  q-ml-xl" :style="StyleSearchToolbar">
+          <q-input
+            label="Procurar por..."
+            class="input-bg"
+            rounded
+            dense
+            outlined
+            v-model="search"
+            style="width: 400px; height: 40px;"
+          >
+            <template v-slot:append>
+              <q-icon name="search" class="input-bg-icon q-ml-xl" />
+            </template>
+          </q-input>
+        </div>
+      </div>
             <div class="q-ml-auto q-mr-xl">
               <div class="">
                 <q-btn
@@ -34,26 +52,32 @@
                 <!-- <q-icon name="shopping_cart" size="24px" />-->
               </div>
             </div>
+            
           </q-toolbar>
+          <div class="q-mt-lg">
+            <q-tabs
+              v-model="tab"
+              inline-label
+              indicator-color="transparent"
+              active-color="tabs-color"
+              class="tabs-color "
+              exact
+            >
+              <div class="tabs-borda">
+                <q-tab name="food" icon="fastfood" label="Refeições" />
+              </div>
+              <div class="tabs-borda">
+                <q-tab name="alarms" icon="wine_bar" label="Bebidas" />
+              </div>
+              <div class="tabs-borda">
+                <q-tab name="movies" icon="cake" label="Sobremesas" />
+              </div>
+            </q-tabs>
+          </div>
         </div>
       </div>
 
-      <div class="search flex flex-center">
-        <div class="pro">
-          <q-input
-            label="Procurar por mesas.."
-            class="input-bg"
-            rounded
-            outlined
-            v-model="search"
-            style="width: 800px"
-          >
-            <template v-slot:append>
-              <q-icon name="search" class="input-bg-icon" />
-            </template>
-          </q-input>
-        </div>
-      </div>
+
     </q-header>
 
     <q-drawer
@@ -64,8 +88,8 @@
       behavior="mobile"
       class="drawer-right"
     >
-      <q-page padding>
-        <div class="row items-center q-mb-md">
+      <q-page padding class="">
+        <div class="row items-center q-mb-md ">
           <div class="col">
             <span class="label-category text-grey-8">Pedidos</span>
           </div>
@@ -74,7 +98,7 @@
           </div>
         </div>
 
-        <div class="q-mb-md tableid">
+        <!-- <div class="q-mb-md tableid">
           <div class="text-body1 text-bold text-grey-8">
             Numero da Mesa:
             <strong class="q-ml-lg text-black text-bold">A-23</strong>
@@ -83,10 +107,10 @@
             ID do Pedido:
             <strong class="q-ml-lg text-black text-bold">A-013212</strong>
           </div>
-        </div>
+        </div> -->
 
         <div class="q-mb-md">
-          <div class="scroll-div">
+          <div class="scroll-div  " :style="scrollDiv">
             <q-card flat bordered class="q-pa-sm q-mt-sm">
               <div class="row">
                 <div class="col-auto q-mr-sm">
@@ -252,34 +276,20 @@
 
     <q-layout class="">
       <q-page-container class="q-mr-auto q-ml-auto">
-        <div class="label-category q-mt-md q-mb-sm text-bold text-grey-8">
-          <label class="label q-ml-lg q-mt-xl">Categorias</label>
-        </div>
+
+         <!--  <label class=" label-category text-bold text-grey-8 label q-ml-lg q-mt-xl">Categorias</label>
+ -->
         <div class="category">
           <div class="">
-            <q-tabs
-              v-model="tab"
-              inline-label
-              indicator-color="transparent"
-              active-color="tabs-color"
-              class="tabs-color"
-              exact
-            >
-              <div class="tabs-borda">
-                <q-tab name="food" icon="fastfood" label="Refeições" />
-              </div>
-              <div class="tabs-borda">
-                <q-tab name="alarms" icon="wine_bar" label="Bebidas" />
-              </div>
-              <div class="tabs-borda">
-                <q-tab name="movies" icon="cake" label="Sobremesas" />
-              </div>
-            </q-tabs>
-
+            
+            
+                <div class="scrollable-div">
+                  
+               
             <q-tab-panels v-model="tab" animated class="tab-panels">
               <q-tab-panel name="food" class="">
-                <div class="production-content scrollable-div">
-                  <div class="row">
+                <div class="   ">
+                  <div class="row flex flex-center">
                     <div
                       class="q-pa-none q-mb-md card-customer"
                       :style="customerheight"
@@ -920,7 +930,7 @@
                         </div>
                       </div>
                     </div>
-                  
+
                 </div>
                 </div>
               </q-tab-panel>
@@ -935,6 +945,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </q-tab-panel>
             </q-tab-panels>
+          </div>
           </div>
         </div>
       </q-page-container>
@@ -955,7 +966,7 @@ const router = useRouter();
 const rightDrawerOpen = ref(false);
 
 const headerStyle = computed(() => ({
-  height: Platform.is.ios ? '170px' : '150px',
+  height: Platform.is.android ? '170px' : '135px',
   color: 'black',
   fontWeight: 'bold',
   fontSize: '15px',
@@ -963,8 +974,28 @@ const headerStyle = computed(() => ({
   boxShadow: 'rgb(166, 192, 254)',
 }));
 
+/* .scroll-div {
+  height: ;
+  
+} */
+const scrollDiv = computed(() => ({
+  height: Platform.is.android ? '248px' : '320px',
+  overflow: 'auto',
+  
+  
+}));
+
+const headerStyleSearchToolbar = computed(() => ({
+  width: Platform.is.android ? '92%' : '80%',
+
+}));
+const StyleSearchToolbar = computed(() => ({
+  marginLeft: Platform.is.android ? '30%' : '80%',
+
+}));
+
 const customerheight = computed(() => ({
-  width: Platform.is.ios ? '207px' : '187px',
+  width: Platform.is.ios ? '207px' : '175px',
   height: '230px',
 }));
 
@@ -1040,20 +1071,24 @@ function toggleRightDrawer() {
 }
 
 .scrollable-div {
-  padding-bottom: 120px;
-  height: 68vh;
+  padding-bottom: 20px;
+  height: 50%;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   overflow: auto; /* Scroll só aparece se necessário */
 }
 
-.scroll-div {
-  height: 320px;
-  overflow: auto;
+.tabs-fixed {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white; /* Garante que o fundo seja visível quando fixo */
 }
 
 .label-product {
   font-size: large;
-  
+
 }
 
 .dispo-pratos{
@@ -1105,15 +1140,17 @@ function toggleRightDrawer() {
 }
 
 .tabs-color {
-  color: #7751e9;
+  color: white;
+
 }
 
 .tabs-borda {
   width: 15%;
-
+ color: white;
+ border-color: white;
   margin: 10px;
   border-radius: 25px;
-  border: 1px solid blue;
+  border: 1px solid white;
 }
 .icon-delete-cart {
   width: 6vh;
@@ -1133,6 +1170,7 @@ function toggleRightDrawer() {
   color: white;
   font-size: 20px;
   font-weight: bolder;
+  box-shadow:  3px 10px 20px -1px rgba(109, 66, 239, 0.4);
   background: rgb(166, 192, 254);
   background: linear-gradient(
     90deg,
