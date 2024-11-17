@@ -1,41 +1,26 @@
-# Quasar App (qvite)
+Categorias: Refeicoes vie / angolana
+    sub-categorias: 
+      
+       name: Category_frutos_do_mar: 
+            Mariscos:
+               ->Entradas
+      
+        name: Category_carnes:
+            carnes vermelhas: 
+                name:
+            Carnes Brancas:
+                name: 
+                 ->Entradas
+                  ->Pho
+               
 
-A Quasar Project
+    Sobremesas:
+    Entradas
+    guarnicoes:
+    Pho:
+    Bun:
+    Lau:
+    Banh:
+    Vietnam:
+        
 
-## Install the dependencies
-```bash
-yarn
-# or
-npm install
-```
-
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
-
-
-### Lint the files
-```bash
-yarn lint
-# or
-npm run lint
-```
-
-
-### Format the files
-```bash
-yarn format
-# or
-npm run format
-```
-
-
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).

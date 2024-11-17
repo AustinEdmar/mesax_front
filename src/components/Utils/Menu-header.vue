@@ -42,7 +42,7 @@
                 color="danger"
                 icon="ballot"
                 size="14px"
-                @click="open"
+               
               >
                 <q-badge class="badge" color="red" floating label="5" />
               </q-btn>
@@ -57,31 +57,7 @@
        <!--  -->
     </div>
   </div>
-  <vue-bottom-sheet
-  ref="myBottomSheet"
-  :max-width="1000"
-  :max-height="500"
-  overlay-color="#00001a"
-  >
-    <div class="bsheet q-ma-lg">
-      <h1>Lorem Ipsum</h1>
-    <h2>What is Lorem Ipsum?</h2>
-    <p>
-      <strong>Lorem Ipsum</strong> is simply dummy text
-    </p>
-
-    <h1>eu </h1>
-    <h2>What is Lorem Ipsum?</h2>
-    <p>
-      <strong>Lorem Ipsum</strong> is simply dummy text
-    </p>
-    <h1>Lorem Ipsum</h1>
-    <h2>What is Lorem Ipsum?</h2>
-    <p>
-      <strong>Lorem Ipsum</strong> is simply dummy text
-    </p>
-    </div>
-  </vue-bottom-sheet>
+  
 </template>
 
 <script setup lang="ts">
@@ -89,8 +65,7 @@ import { useRouter, useRoute } from 'vue-router';
 import { computed } from 'vue';
 import { Platform } from 'quasar';
 
-import VueBottomSheet from '@webzlodimir/vue-bottom-sheet';
-import  '@webzlodimir/vue-bottom-sheet/dist/style.css';
+
 
 import { ref } from 'vue';
 
@@ -137,11 +112,9 @@ const bells = computed(() => ({
   paddingLeft: Platform.is.android ? '50px' : '50px',
 }));
 
-const myBottomSheet = ref<InstanceType<typeof VueBottomSheet>>()
 
-const open = () => {
-  myBottomSheet.value.open();
-}
+
+
 
 
 </script>

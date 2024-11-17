@@ -2,9 +2,9 @@
   <q-page class="">
     <HeaderPage />
 
-    <q-layout class=" ">
+    <q-layout class="">
 
-      <div class="scrollable-div  ">
+      <div class="scrollable-div borda ">
         <div class="row  table-mb flex flex-center ">
           
           <q-btn flat class="  mesacursor " @click="goToRoute">
@@ -352,10 +352,10 @@ const goToRoute = () => {
 </script>
 
 <style scoped>
-.scrollable-div {
-  
-  padding-bottom: 150px;
-  height: 530px;
+.scrollable-div  {
+ /*  padding-bottom: 150px; */
+  padding-bottom: 20px;
+  height: 100%;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -370,7 +370,7 @@ const goToRoute = () => {
   cursor: pointer;
   margin-left: 5px;
   margin-right: 5px;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 

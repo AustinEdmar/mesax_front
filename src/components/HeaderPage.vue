@@ -1,5 +1,5 @@
 <template>
-  <q-header :style="headerStyle" class="bg-darks rounded">
+  <q-header :style="headerStyle" class="bg-darks rounded ">
     <div class="row">
       <div class="col-md-1 q-mt-md"><burguer /></div>
 
@@ -29,7 +29,7 @@ const props = defineProps({
 });
 
 const headerStyle = computed(() => ({
-  height: Platform.is.ios ? '170px' : '150px',
+  height: Platform.is.android ? '150px' : '150px',
   color: 'black',
   fontWeight: 'bold',
   fontSize: '15px',

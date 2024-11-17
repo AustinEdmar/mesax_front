@@ -1,10 +1,10 @@
 <template>
   <q-page class="pa">
-    <q-header class="" :style="headerStyle">
+    <q-header class=" " :style="headerStyle">
       <div class="row q-mt-md">
         <div class="col-md-1"><burguer/></div>
-        <div class="col-md-11  " :style="headerStyleSearchToolbar">
-          <q-toolbar class=" flex flex-center ">
+        <div class="col-md-11   " :style="headerStyleSearchToolbar">
+          <q-toolbar class="   flex flex-center  ">
             <q-btn
               class="icon-container"
               flat
@@ -19,8 +19,8 @@
                 >Pedido mesa: A-23</span
               >
             </q-btn>
-              <div class="search flex flex-center ">
-        <div class="  q-ml-xl" :style="StyleSearchToolbar">
+              <div class="search  flex flex-center ">
+        <div class="   " :style="StyleSearchToolbar">
           <q-input
             label="Procurar por..."
             class="input-bg"
@@ -54,17 +54,65 @@
             </div>
             
           </q-toolbar>
-          <div class="q-mt-lg">
+          <div class=" ">
             <q-tabs
+            dense
               v-model="tab"
               inline-label
               indicator-color="transparent"
-              active-color="tabs-color"
+              
               class="tabs-color "
               exact
             >
-              <div class="tabs-borda">
-                <q-tab name="food" icon="fastfood" label="Refeições" />
+              <div class="">
+                <q-tab name="food"  > 
+                <q-btn-dropdown
+     icon="fastfood"
+     dense
+      rounded
+      label="Refeições "
+      class="dropdown "
+    >
+      <q-list>
+        <q-checkbox
+      v-model="checkedCategories['usa']"
+      :val="true"
+      label="United States"
+      class="category-main"
+      @update:model-value="toggleSubcategories('usa')"
+    />
+    <div v-if="checkedCategories['usa']" class="subcategories">
+      <q-checkbox
+        v-model="selectedSubcategories"
+        val="chicago"
+        label="Chicago"
+        class="subcategory"
+      />
+      <q-checkbox
+        v-model="selectedSubcategories"
+        val="los_angeles"
+        label="Los Angeles"
+        class="subcategory"
+      />
+      <q-checkbox
+        v-model="selectedSubcategories"
+        val="new_york_city"
+        label="New York City"
+        class="subcategory"
+      />
+    </div>
+
+    <!-- Outra categoria principal -->
+    <q-checkbox
+      v-model="checkedCategories['canada']"
+      :val="true"
+      label="Canada"
+      class="category-main"
+    />
+        
+      </q-list>
+    </q-btn-dropdown>
+                </q-tab>
               </div>
               <div class="tabs-borda">
                 <q-tab name="alarms" icon="wine_bar" label="Bebidas" />
@@ -72,7 +120,18 @@
               <div class="tabs-borda">
                 <q-tab name="movies" icon="cake" label="Sobremesas" />
               </div>
+              
             </q-tabs>
+
+       <div class="taif">
+        
+        <div>
+    <!-- Categoria principal com checkbox -->
+    
+  </div>
+
+     </div>
+        
           </div>
         </div>
       </div>
@@ -110,8 +169,8 @@
         </div> -->
 
         <div class="q-mb-md">
-          <div class="scroll-div  " :style="scrollDiv">
-            <q-card flat bordered class="q-pa-sm q-mt-sm">
+          <div class=""  :style="scrollDiv">
+            <q-card flat bordered class="q-pa-sm q-mt-sm   "> 
               <div class="row">
                 <div class="col-auto q-mr-sm">
                   <q-img
@@ -131,7 +190,7 @@
                     />
                   </div>
 
-                  <div class="row items-center q-mt-sm">
+                  <div class="row items-center q-mt-sm ">
                     <div class="text-caption text-bold text-green q-mr-sm">
                       32 Stock
                     </div>
@@ -145,7 +204,7 @@
                 </div>
               </div>
             </q-card>
-            <q-card flat bordered class="q-pa-sm q-mt-sm">
+            <q-card flat bordered class="q-pa-sm q-mt-sm  ">
               <div class="row">
                 <div class="col-auto q-mr-sm">
                   <q-img
@@ -165,7 +224,7 @@
                     />
                   </div>
 
-                  <div class="row items-center q-mt-sm">
+                  <div class="row items-center q-mt-sm ">
                     <div class="text-caption text-bold text-red q-mr-sm">
                       01 Stock
                     </div>
@@ -179,7 +238,7 @@
                 </div>
               </div>
             </q-card>
-            <q-card flat bordered class="q-pa-sm q-mt-sm">
+            <q-card flat bordered class="q-pa-sm q-mt-sm ">
               <div class="row">
                 <div class="col-auto q-mr-sm">
                   <q-img
@@ -213,7 +272,7 @@
                 </div>
               </div>
             </q-card>
-            <q-card flat bordered class="q-pa-sm q-mt-sm">
+            <q-card flat bordered class="q-pa-sm q-mt-sm ">
               <div class="row">
                 <div class="col-auto q-mr-sm">
                   <q-img
@@ -250,9 +309,9 @@
           </div>
         </div>
 
-        <div class="q-mt-lg">
-          <q-separator />
-          <div class="row justify-between q-my-md">
+        <div class="q-mt-lg ">
+          <q-separator class="" />
+          <div class="row justify-between q-my-md  ">
             <div class="text-body1 text-grey-8">Subtotal</div>
             <div class="text-body1 text-bold text-grey-8">11.500 kz KZ</div>
           </div>
@@ -268,9 +327,10 @@
               19.500 KZ
             </div>
           </div>
+          <q-btn rounded unelevated class="full-width btn-pagar">Pagar</q-btn>
         </div>
 
-        <q-btn rounded unelevated class="full-width btn-pagar">Pagar</q-btn>
+        
       </q-page>
     </q-drawer>
 
@@ -283,7 +343,7 @@
           <div class="">
             
             
-                <div class="scrollable-div">
+                <div class="scrollable-div ">
                   
                
             <q-tab-panels v-model="tab" animated class="tab-panels">
@@ -606,7 +666,7 @@
                         <div
                           class="text-bold preco-border text-center label-product  text-h5 q-mt-md"
                         >
-                          8.500 AKZ
+                          8.600 AKZ
                         </div>
                       </div>
                     </div>
@@ -961,23 +1021,41 @@ import { useRouter } from 'vue-router';
 import { ref } from 'vue';
 
 const search = ref('');
-const tab = ref('food');
+const tab = ref<string>('food');
+
+// Estado das categorias principais (true/false)
+const checkedCategories = ref<{ [key: string]: boolean }>({
+  usa: false,
+  canada: false
+});
+
+
 const router = useRouter();
 const rightDrawerOpen = ref(false);
 
+// Subcategorias selecionadas
+const selectedSubcategories = ref<string[]>([]);
+
+// Função para alternar subcategorias ao marcar/desmarcar a categoria principal
+const toggleSubcategories = (category: string) => {
+  if (!checkedCategories.value[category]) {
+    // Se desmarcar a categoria principal, remover as subcategorias correspondentes
+    selectedSubcategories.value = selectedSubcategories.value.filter(
+      (subcat) => !subcat.startsWith(category)
+    );
+  }
+};
+
+
 const headerStyle = computed(() => ({
-  height: Platform.is.android ? '170px' : '135px',
+  height: Platform.is.android ? '150px' : '165px',
   color: 'black',
   fontWeight: 'bold',
   fontSize: '15px',
   width: '100%',
   boxShadow: 'rgb(166, 192, 254)',
 }));
-
-/* .scroll-div {
-  height: ;
   
-} */
 const scrollDiv = computed(() => ({
   height: Platform.is.android ? '248px' : '320px',
   overflow: 'auto',
@@ -990,7 +1068,7 @@ const headerStyleSearchToolbar = computed(() => ({
 
 }));
 const StyleSearchToolbar = computed(() => ({
-  marginLeft: Platform.is.android ? '30%' : '80%',
+  marginLeft: Platform.is.android ? '30%' : '40%',
 
 }));
 
@@ -1006,12 +1084,36 @@ const goToRoute = () => {
 function toggleRightDrawer() {
   rightDrawerOpen.value = !rightDrawerOpen.value;
 }
+
 </script>
 
 <style scoped>
 .pedido-back {
   font-weight: bolder;
 }
+
+.dropdown{
+  padding: 8px 12px;
+  
+ color: white;
+ border-color: white;
+  margin: 10px;
+  border-radius: 25px;
+  border: 1px solid white;
+}
+.category-main {
+  font-weight: bold;
+  margin: 8px;
+}
+
+.subcategories {
+  padding-left: 20px;
+}
+
+.subcategory {
+  margin-bottom: 5px;
+}
+
 .search {
   height: 50%;
 }
@@ -1071,8 +1173,8 @@ function toggleRightDrawer() {
 }
 
 .scrollable-div {
-  padding-bottom: 20px;
-  height: 50%;
+  padding-bottom: 160px;
+  height: 100vh;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -1171,11 +1273,20 @@ function toggleRightDrawer() {
   font-size: 20px;
   font-weight: bolder;
   box-shadow:  3px 10px 20px -1px rgba(109, 66, 239, 0.4);
-  background: rgb(166, 192, 254);
+  
   background: linear-gradient(
     90deg,
-    rgba(166, 192, 254, 1) 0%,
+    rgb(107, 148, 243) 0%,
     rgba(109, 66, 239, 1) 100%
   );
 }
+
+.checkbox-inline{
+  color: white;
+  padding-left: 10px;
+  
+}
+
+
+
 </style>
